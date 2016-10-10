@@ -96,7 +96,7 @@ public class Fleet {
 		System.out.println("Currently active jets, sorted by speed: ");
 		for (int i = 0; i < ids.length; i++) {
 			// System.out.println(ids[i] - 1);
-			System.out.println(Fleet.getJet(ids[i] - 1).toString());
+			Fleet.getJet(ids[i] - 1).toString();
 			System.out.println();
 		}
 	}
@@ -143,7 +143,7 @@ public class Fleet {
 
 		for (int i = 0; i < ids.length; i++) {
 			// System.out.println(ids[i]-1);
-			System.out.println(Fleet.getJet(ids[i] - 1).toString());
+			Fleet.getJet(ids[i] - 1).toString();
 			System.out.println();
 		}
 	}
