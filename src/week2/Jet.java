@@ -154,19 +154,19 @@ public class Jet {
 		System.out.println(airline + " Aircraft " + id + "\nManufactured by " + make + "\nModel " + model
 				+ "\nTop speed: " + topMPH + "nMPH (Mach " + topMach + ")\nMax rated range: " + maxRangeMiles
 				+ " miles\nMaximum passenger load: " + maxCapacity + "\nMinimum cockpit crew personal: "
-				+ cockpitCrewNo);
+				+ cockpitCrewNo + "Base cost: " + baseCost + "\nPurchase date: " + purchaseDate + "\nLast serviced on: "
+				+ serviceDate + "\nCurrently active: " + active);
 		if (pilots.length != 0) {
 			System.out.print("Pilot assigned to aircraft:\n");
 			getPilots();
 		}
-		System.out.println("Base cost: " + baseCost + "\nPurchase date: " + purchaseDate + "\nLast serviced on: "
-				+ serviceDate + "\nCurrently active: " + active);
 	}
 
 	public void getPilots() {
 		for (int i = 0; i < pilots.length; i++) {
-			System.out.println("\t" + PersonnelList.getEmployees(pilots[i]).getFirstName() + " "
-					+ PersonnelList.getEmployees(pilots[i]).getLastName());
+			HRDept.getPersonnel(pilots[i]).display();
+//			System.out.println("\t" + PersonnelList.getEmployees(pilots[i]).getFirstName() + " "
+//					+ PersonnelList.getEmployees(pilots[i]).getLastName());
 		}
 	}
 

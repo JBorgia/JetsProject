@@ -118,4 +118,12 @@ public class HRDept {
 		}
 	}
 
+	public static Employee getPersonnel(int i) {
+		return personnel[i];
+	}
+	
+	public static Employee[] getPersonnelList() {
+		return personnel;
+	}
+
 }

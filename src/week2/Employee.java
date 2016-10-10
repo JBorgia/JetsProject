@@ -33,9 +33,9 @@ public class Employee {
 	}
 	
 	public void display(){
+		System.out.println("Name: " + this.getFirstName() + " " + this.getLastName());
 		System.out.println("Employee ID: " + this.getEmployeeNumber());
 		System.out.println("Job Title: " + this.getTitle());
-		System.out.println(this.getFirstName() + " " + this.getLastName());
 		System.out.println("Salary: " + this.getSalary());
 		System.out.println("Date Hired: " + this.getDateHired());
 		System.out.println();

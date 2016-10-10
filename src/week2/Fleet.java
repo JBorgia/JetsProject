@@ -204,6 +204,9 @@ public class Fleet {
 			newJet.setActive(false);
 		}
 
+		int randomNum = (int)(HRDept.getPersonnelList().length*Math.random());
+		newJet.addPilots(randomNum);
+		
 		Jet[] fleetAfter = new Jet[fleetJet.length + 1];
 		fleetAfter[fleetJet.length] = newJet;
 
