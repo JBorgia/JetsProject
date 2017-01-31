@@ -106,6 +106,7 @@ public class Jet {
 		return maxCapacity;
 	}
 
+
 	public void setMaxCapacity(int maxCapacity) {
 		this.maxCapacity = maxCapacity;
 	}

@@ -87,6 +87,7 @@ public class PersonnelList {
 			jetId = kb.nextInt();
 			Fleet.getJet(jetId - 1).addPilots(pilotId);
 			System.out.println("Pilot ID#" + pilotId + " has been assigned to aircraft ID#" + jetId);
+			Fleet.getJet(jetId-1).addPilots(pilotId);
 			break;
 		case 5:
 			break;
